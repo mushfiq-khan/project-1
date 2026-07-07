@@ -43,6 +43,9 @@ ul li a{
     color: white;
     border: none;
     cursor: pointer;
+    display: inline-flex;
+    transition: background-color 0.3 ease;
+    box-shadow: 0 4px 6px #276969;
 }
 
 .outline-btn{
@@ -54,6 +57,9 @@ ul li a{
     color: aqua;
     border: 1px solid aqua;
     cursor: pointer;
+    display: inline-flex;
+    transition: background-color 0.3 ease;
+    box-shadow: 0 4px 6px #276969;
 }
 
 .hero-parent-root{
@@ -65,9 +71,17 @@ ul li a{
     align-items: center;
     padding: 15px 0;
 }
-.container{
+.container2{
     max-width: 1200px;
     margin: auto;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    fontfamily: "Open Sans", sans-serif;
+    color: #333;
+    
 }
 .hero-left h2{
   font-size: 40px;
@@ -128,6 +142,49 @@ ul li a{
 .what-i-do-card-container .what-i-do-card h2{
     margin: 10px 0;
 }
+/* main section */
+.section-title{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: #333;
+}
+/* 2 coulms side by side */
+.resume-columns{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px; /*2 columns gap*/
+}
+/*coulmn width*/
+.resume-column{
+    flex: 1;
+}
+/* coulmn headings */
+.column-title{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+}
+/* card item box */
+.resume-item{
+    margin-bottom: 35px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #d3f1f1;/* item er niche dag */
+}
+/* job degree title */
+.resume-item h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin:auto 10px 0;
+    color: #333;
+}
+/* Download button */
+.download-btn {
+    text-align: center;
+    margin-top: 50px;
+}
 /* my amazing work */
 .my-amazing-parent{
     text-align: center;
@@ -184,6 +241,9 @@ footer{
 }
 footer form{
     padding: 20px;
+}
+.footer-left p{
+    margin: 10px 0;
 }
 footer form input, footer form textarea{
     border: none;
